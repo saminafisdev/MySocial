@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saved Posts - MySocial</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/62136cf61f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-left">
+        <div class="logo">MySocial</div>
+        <button class="home-btn" title="Home">
+          <i class="fas fa-home"></i>
+        </button>
+      </div>
+      <div class="header-center">
+        <input type="text" class="search-bar" placeholder="Search..." />
+      </div>
+      <div class="header-right">
+        <button class="add-post-btn" title="Add Post">
+          <i class="fas fa-plus"></i>
+        </button>
+        <button class="friend-requests-btn" title="Friend Requests">
+          <i class="fas fa-user-friends"></i>
+        </button>
+        <button class="message-btn" title="Messages">
+          <i class="fas fa-comment-dots"></i>
+        </button>
+        <button class="notifications-btn" title="Notifications">
+          <i class="fas fa-bell"></i>
+        </button>
+        <button class="profile-btn" title="Profile">
+          <i class="fas fa-user-circle"></i>
+        </button>
+        <div class="dropdown">
+          <button class="dropdown-btn" title="More">
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#"><i class="fas fa-cog"></i> Settings</a>
+            <a href="#"><i class="fas fa-question-circle"></i> Help</a>
+            <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <aside class="sidebar">
+      <div class="sidebar-profile">
+        <a href="profile.html" class="sidebar-profile-link">
+          <img
+            src="https://randomuser.me/api/portraits/men/32.jpg"
+            alt="User"
+            class="sidebar-profile-avatar"
+          />
+          <span>John Doe</span>
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html"><i class="fas fa-house"></i> Home</a>
+          </li>
+          <li>
+            <a href="people.html"><i class="fas fa-user-friends"></i> People</a>
+          </li>
+          <li>
+            <a href="messages.html"
+              ><i class="fas fa-comment-dots"></i> Messages</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-store"></i> Marketplace</a>
+          </li>
+          <li>
+            <a href="watch.html"><i class="fas fa-tv"></i> Watch</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-calendar-alt"></i> Events</a>
+          </li>
+          <li>
+            <a href="saved.html" class="active"
+              ><i class="fas fa-bookmark"></i> Saved Posts</a
+            >
+          </li>
+          <li>
+            <a href="games.html"><i class="fas fa-gamepad"></i> Games</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="weather-widget">
+        <div class="weather-header">
+          <i class="fas fa-cloud-sun"></i> Weather
+        </div>
+        <div class="weather-info">
+          <span class="weather-temp">28°C</span>
+          <span class="weather-city">Lagos</span>
+        </div>
+      </div>
+    </aside>
+    <aside class="right-sidebar">
+      <div class="trending-topics">
+        <h3>Trending Topics</h3>
+        <ul>
+          <li><a href="#">#AIRevolution</a></li>
+          <li><a href="#">#Euro2025</a></li>
+          <li><a href="#">#ClimateAction</a></li>
+          <li><a href="#">#TechNews</a></li>
+          <li><a href="#">#MusicFest</a></li>
+        </ul>
+      </div>
+      <div class="friend-list">
+        <h3>Friends</h3>
+        <ul>
+          <li>
+            <img
+              src="https://randomuser.me/api/portraits/men/32.jpg"
+              alt="John"
+              class="friend-avatar"
+            />
+            John Doe <span class="status online"></span>
+          </li>
+          <li>
+            <img
+              src="https://randomuser.me/api/portraits/women/44.jpg"
+              alt="Jane"
+              class="friend-avatar"
+            />
+            Jane Smith <span class="status offline"></span>
+          </li>
+          <li>
+            <img
+              src="https://randomuser.me/api/portraits/men/65.jpg"
+              alt="Mike"
+              class="friend-avatar"
+            />
+            Mike Lee <span class="status online"></span>
+          </li>
+          <li>
+            <img
+              src="https://randomuser.me/api/portraits/women/22.jpg"
+              alt="Anna"
+              class="friend-avatar"
+            />
+            Anna Kim <span class="status online"></span>
+          </li>
+          <li>
+            <img
+              src="https://randomuser.me/api/portraits/men/12.jpg"
+              alt="Chris"
+              class="friend-avatar"
+            />
+            Chris Paul <span class="status offline"></span>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <main>
+      <section class="people-section">
+        <h2 class="section-title">
+          <i class="fas fa-bookmark"></i> Saved Posts
+        </h2>
+        <div class="posts-list">
+          <article class="post-card">
+            <div class="post-header">
+              <img
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+                alt="Jane"
+                class="post-avatar"
+              />
+              <div>
+                <div class="post-author">Jane Smith</div>
+                <div class="post-time">2 days ago</div>
+              </div>
+            </div>
+            <div class="post-content">
+              This is one of my favorite memories from last summer!
+            </div>
+            <div class="post-actions">
+              <button><i class="fas fa-thumbs-up"></i> Like</button>
+              <button><i class="fas fa-comment"></i> Comment</button>
+              <button><i class="fas fa-share"></i> Share</button>
+            </div>
+          </article>
+          <article class="post-card">
+            <div class="post-header">
+              <img
+                src="https://randomuser.me/api/portraits/men/65.jpg"
+                alt="Mike"
+                class="post-avatar"
+              />
+              <div>
+                <div class="post-author">Mike Lee</div>
+                <div class="post-time">1 week ago</div>
+              </div>
+            </div>
+            <div class="post-content">
+              Saved this post for later. Great tips on productivity!
+            </div>
+            <div class="post-actions">
+              <button><i class="fas fa-thumbs-up"></i> Like</button>
+              <button><i class="fas fa-comment"></i> Comment</button>
+              <button><i class="fas fa-share"></i> Share</button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

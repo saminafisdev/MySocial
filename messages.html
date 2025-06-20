@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Messages - MySocial</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/62136cf61f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-left">
+        <div class="logo">MySocial</div>
+        <button class="home-btn" title="Home">
+          <i class="fas fa-home"></i>
+        </button>
+      </div>
+      <div class="header-center">
+        <input type="text" class="search-bar" placeholder="Search..." />
+      </div>
+      <div class="header-right">
+        <button class="add-post-btn" title="Add Post">
+          <i class="fas fa-plus"></i>
+        </button>
+        <button class="friend-requests-btn" title="Friend Requests">
+          <i class="fas fa-user-friends"></i>
+        </button>
+        <button class="message-btn" title="Messages">
+          <i class="fas fa-comment-dots"></i>
+        </button>
+        <button class="notifications-btn" title="Notifications">
+          <i class="fas fa-bell"></i>
+        </button>
+        <button class="profile-btn" title="Profile">
+          <i class="fas fa-user-circle"></i>
+        </button>
+        <div class="dropdown">
+          <button class="dropdown-btn" title="More">
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#"><i class="fas fa-cog"></i> Settings</a>
+            <a href="#"><i class="fas fa-question-circle"></i> Help</a>
+            <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <aside class="sidebar">
+      <div class="sidebar-profile">
+        <a href="profile.html" class="sidebar-profile-link">
+          <img
+            src="https://randomuser.me/api/portraits/men/32.jpg"
+            alt="User"
+            class="sidebar-profile-avatar"
+          />
+          <span>John Doe</span>
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html"><i class="fas fa-house"></i> Home</a>
+          </li>
+          <li>
+            <a href="people.html"><i class="fas fa-user-friends"></i> People</a>
+          </li>
+          <li>
+            <a href="messages.html" class="active"
+              ><i class="fas fa-comment-dots"></i> Messages</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-store"></i> Marketplace</a>
+          </li>
+          <li>
+            <a href="watch.html"><i class="fas fa-tv"></i> Watch</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-calendar-alt"></i> Events</a>
+          </li>
+          <li>
+            <a href="saved.html"><i class="fas fa-bookmark"></i> Saved Posts</a>
+          </li>
+          <li>
+            <a href="games.html"><i class="fas fa-gamepad"></i> Games</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="weather-widget">
+        <div class="weather-header">
+          <i class="fas fa-cloud-sun"></i> Weather
+        </div>
+        <div class="weather-info">
+          <span class="weather-temp">28°C</span>
+          <span class="weather-city">Dhaka</span>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <section class="messages-section">
+        <div class="messages-list">
+          <div class="message-user active">
+            <img
+              src="https://randomuser.me/api/portraits/women/44.jpg"
+              alt="Jane"
+              class="message-avatar"
+            />
+            <div class="message-user-info">
+              <div class="message-user-name">Jane Smith</div>
+              <div class="message-user-last">
+                Hey! Are you coming to the event?
+              </div>
+            </div>
+            <span class="message-time">2m</span>
+          </div>
+          <div class="message-user">
+            <img
+              src="https://randomuser.me/api/portraits/men/65.jpg"
+              alt="Mike"
+              class="message-avatar"
+            />
+            <div class="message-user-info">
+              <div class="message-user-name">Mike Lee</div>
+              <div class="message-user-last">Sent you the files.</div>
+            </div>
+            <span class="message-time">10m</span>
+          </div>
+          <div class="message-user">
+            <img
+              src="https://randomuser.me/api/portraits/women/22.jpg"
+              alt="Anna"
+              class="message-avatar"
+            />
+            <div class="message-user-info">
+              <div class="message-user-name">Anna Kim</div>
+              <div class="message-user-last">See you soon!</div>
+            </div>
+            <span class="message-time">1h</span>
+          </div>
+        </div>
+        <div class="chat-window">
+          <div class="chat-header">
+            <img
+              src="https://randomuser.me/api/portraits/women/44.jpg"
+              alt="Jane"
+              class="message-avatar"
+            />
+            <span class="chat-user-name">Jane Smith</span>
+          </div>
+          <div class="chat-body">
+            <div class="chat-message chat-message-them">
+              Hey! Are you coming to the event?
+            </div>
+            <div class="chat-message chat-message-me">
+              Yes! I'll be there at 7pm.
+            </div>
+            <div class="chat-message chat-message-them">
+              Awesome, see you then!
+            </div>
+          </div>
+          <div class="chat-input-row">
+            <input
+              type="text"
+              class="chat-input"
+              placeholder="Type a message..."
+            />
+            <button class="chat-send-btn">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

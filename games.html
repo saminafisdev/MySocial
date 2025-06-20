@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games - MySocial</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/62136cf61f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-left">
+        <div class="logo">MySocial</div>
+        <button class="home-btn" title="Home">
+          <i class="fas fa-home"></i>
+        </button>
+      </div>
+      <div class="header-center">
+        <input type="text" class="search-bar" placeholder="Search..." />
+      </div>
+      <div class="header-right">
+        <button class="add-post-btn" title="Add Post">
+          <i class="fas fa-plus"></i>
+        </button>
+        <button class="friend-requests-btn" title="Friend Requests">
+          <i class="fas fa-user-friends"></i>
+        </button>
+        <button class="message-btn" title="Messages">
+          <i class="fas fa-comment-dots"></i>
+        </button>
+        <button class="notifications-btn" title="Notifications">
+          <i class="fas fa-bell"></i>
+        </button>
+        <button class="profile-btn" title="Profile">
+          <i class="fas fa-user-circle"></i>
+        </button>
+        <div class="dropdown">
+          <button class="dropdown-btn" title="More">
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#"><i class="fas fa-cog"></i> Settings</a>
+            <a href="#"><i class="fas fa-question-circle"></i> Help</a>
+            <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <aside class="sidebar">
+      <div class="sidebar-profile">
+        <a href="profile.html" class="sidebar-profile-link">
+          <img
+            src="https://randomuser.me/api/portraits/men/32.jpg"
+            alt="User"
+            class="sidebar-profile-avatar"
+          />
+          <span>John Doe</span>
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html"><i class="fas fa-house"></i> Home</a>
+          </li>
+          <li>
+            <a href="people.html"><i class="fas fa-user-friends"></i> People</a>
+          </li>
+          <li>
+            <a href="messages.html"
+              ><i class="fas fa-comment-dots"></i> Messages</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-store"></i> Marketplace</a>
+          </li>
+          <li>
+            <a href="watch.html"><i class="fas fa-tv"></i> Watch</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-calendar-alt"></i> Events</a>
+          </li>
+          <li>
+            <a href="saved.html"><i class="fas fa-bookmark"></i> Saved Posts</a>
+          </li>
+          <li>
+            <a href="games.html" class="active"
+              ><i class="fas fa-gamepad"></i> Games</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="weather-widget">
+        <div class="weather-header">
+          <i class="fas fa-cloud-sun"></i> Weather
+        </div>
+        <div class="weather-info">
+          <span class="weather-temp">28°C</span>
+          <span class="weather-city">Lagos</span>
+        </div>
+      </div>
+    </aside>
+    <aside class="right-sidebar">
+      <div class="trending-topics">
+        <h3>Trending Topics</h3>
+        <ul>
+          <li><a href="#">#AIRevolution</a></li>
+          <li><a href="#">#Euro2025</a></li>
+          <li><a href="#">#ClimateAction</a></li>
+          <li><a href="#">#TechNews</a></li>
+          <li><a href="#">#MusicFest</a></li>
+        </ul>
+      </div>
+      <div class="friend-list">
+        <h3>Friends</h3>
+        <ul>
+          <li>
+            <img
+              src="https://randomuser.me/api/portraits/men/32.jpg"
+              alt="John"
+              class="friend-avatar"
+            />
+            John Doe <span class="status online"></span>
+          </li>
+          <li>
+            <img
+              src="https://randomuser.me/api/portraits/women/44.jpg"
+              alt="Jane"
+              class="friend-avatar"
+            />
+            Jane Smith <span class="status offline"></span>
+          </li>
+          <li>
+            <img
+              src="https://randomuser.me/api/portraits/men/65.jpg"
+              alt="Mike"
+              class="friend-avatar"
+            />
+            Mike Lee <span class="status online"></span>
+          </li>
+          <li>
+            <img
+              src="https://randomuser.me/api/portraits/women/22.jpg"
+              alt="Anna"
+              class="friend-avatar"
+            />
+            Anna Kim <span class="status online"></span>
+          </li>
+          <li>
+            <img
+              src="https://randomuser.me/api/portraits/men/12.jpg"
+              alt="Chris"
+              class="friend-avatar"
+            />
+            Chris Paul <span class="status offline"></span>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <main>
+      <section class="people-section">
+        <h2 class="section-title"><i class="fas fa-gamepad"></i> Games</h2>
+        <div class="games-list" style="flex-wrap: wrap; gap: 32px">
+          <!-- Game Card Example -->
+          <div
+            class="game-card"
+            style="max-width: 340px; min-width: 260px; flex: 1 1 260px"
+          >
+            <img
+              src="https://www.onlinegames.io/media/posts/1015/responsive/apocalypse-truck-xs.jpg"
+              alt="Apocalypse Truck"
+              style="
+                width: 100%;
+                border-radius: 10px;
+                object-fit: cover;
+                max-height: 140px;
+              "
+            />
+            <div class="game-info">
+              <div class="game-title">Apocalypse Truck</div>
+              <div class="game-desc" style="font-size: 0.97rem">
+                When the virus hit, cities crumbled, people vanished. The world
+                went silent except for the groans of the undead. You’re one of
+                the few survivors of zombie apocalypse. Your only hope is a
+                beat-up monster truck, with some spikes, plates, and just enough
+                horsepower to push through the zombie chaos.
+              </div>
+              <a
+                href="#"
+                class="profile-action-btn"
+                onclick="openGame('https://cloud.onlinegames.io/games/2021/1/apocalypse-truck/index-og.html');return false;"
+                ><i class="fas fa-play"></i> Play</a
+              >
+            </div>
+          </div>
+          <div
+            class="game-card"
+            style="max-width: 340px; min-width: 260px; flex: 1 1 260px"
+          >
+            <img
+              src="https://www.onlinegames.io/media/posts/1012/responsive/Kick-The-Pirate-xs.jpg"
+              alt="Kick the Pirate"
+              style="
+                width: 100%;
+                border-radius: 10px;
+                object-fit: cover;
+                max-height: 140px;
+              "
+            />
+            <div class="game-info">
+              <div class="game-title">Kick the Pirate</div>
+              <div class="game-desc" style="font-size: 0.97rem">
+                Ahoy matey! Pirates may be brave on the high seas, but they’ve
+                never met you. In Kick the Pirate, your job is simple: turn this
+                grumpy pirate into your personal punching bag.   He’s muttering
+                curses or just standing there looking smug.
+              </div>
+              <a
+                href="#"
+                class="profile-action-btn"
+                onclick="openGame('https://cloud.onlinegames.io/games/2022/construct/92/kick-the-pirate/index-og.html');return false;"
+                ><i class="fas fa-play"></i> Play</a
+              >
+            </div>
+          </div>
+          <div
+            class="game-card"
+            style="max-width: 340px; min-width: 260px; flex: 1 1 260px"
+          >
+            <img
+              src="https://www.onlinegames.io/media/posts/1011/responsive/Julie-Beauty-Salon-xs.jpg"
+              alt="Julie Beauty Salon"
+              style="
+                width: 100%;
+                border-radius: 10px;
+                object-fit: cover;
+                max-height: 140px;
+              "
+            />
+            <div class="game-info">
+              <div class="game-title">Julie Beauty Salon</div>
+              <div class="game-desc" style="font-size: 0.97rem">
+                Julie Beauty Salon is a glam up makeover game where you run a
+                beauty salon. Every makeover is a mini masterpiece in this fun,
+                stylish browser game. You’re a beauty expert in charge of
+                transforming a fabulous girl with bold makeup, trendy
+                hairstyles, and colorful manicures. If you've ever dreamed of
+                being a stylist or just love mixing and matching beauty looks,
+                this free game is perfect for you.
+              </div>
+              <a
+                href="#"
+                class="profile-action-btn"
+                onclick="openGame('https://cloud.onlinegames.io/games/2021/1/julie-beauty-salon/index-og.html');return false;"
+                ><i class="fas fa-play"></i> Play</a
+              >
+            </div>
+          </div>
+          <div
+            class="game-card"
+            style="max-width: 340px; min-width: 260px; flex: 1 1 260px"
+          >
+            <img
+              src="https://www.onlinegames.io/media/posts/1010/responsive/Mini-Cars-Racing-xs.jpg"
+              alt="Mini Cars Racing"
+              style="
+                width: 100%;
+                border-radius: 10px;
+                object-fit: cover;
+                max-height: 140px;
+              "
+            />
+            <div class="game-info">
+              <div class="game-title">Mini Cars Racing</div>
+              <div class="game-desc" style="font-size: 0.97rem">
+                Mini Cars Racing is a 2 player car racing game you can play free
+                on OnlineGames. io! You can race against the clock or battle a
+                friend on the same device. It's fast, fun, and feels just like
+                playing with toy cars on your childhood road traffic rug.
+              </div>
+              <a
+                href="#"
+                class="profile-action-btn"
+                onclick="openGame('https://cloud.onlinegames.io/games/2021/unity/mini-cars-racing/index-og.html');return false;"
+                ><i class="fas fa-play"></i> Play</a
+              >
+            </div>
+          </div>
+          <div
+            class="game-card"
+            style="max-width: 340px; min-width: 260px; flex: 1 1 260px"
+          >
+            <img
+              src="https://www.onlinegames.io/media/posts/1006/responsive/pyramid-Solitaire-xs.jpg"
+              alt="Pyramid Solitaire"
+              style="
+                width: 100%;
+                border-radius: 10px;
+                object-fit: cover;
+                max-height: 140px;
+              "
+            />
+            <div class="game-info">
+              <div class="game-title">Pyramid Solitaire</div>
+              <div class="game-desc" style="font-size: 0.97rem">
+                Pyramid Solitaire is a free online card game at OnlineGames. io.
+                In this calming card puzzle, you need to remove a pyramid of
+                cards by selecting pairs that add up to 13. It's a simple but
+                fun game to learn.
+              </div>
+              <a
+                href="#"
+                class="profile-action-btn"
+                onclick="openGame('https://cloud.onlinegames.io/games/2025/html/solitaire/index-og.html#pyramid');return false;"
+                ><i class="fas fa-play"></i> Play</a
+              >
+            </div>
+          </div>
+        </div>
+        <script>
+          function openGame(url) {
+            const win = window.open(url, "_blank");
+            if (win) {
+              win.focus();
+            }
+          }
+        </script>
+      </section>
+    </main>
+  </body>
+</html>

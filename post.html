@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Details - MySocial</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/62136cf61f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-left">
+        <div class="logo">MySocial</div>
+        <button class="home-btn" title="Home">
+          <i class="fas fa-home"></i>
+        </button>
+      </div>
+      <div class="header-center">
+        <input type="text" class="search-bar" placeholder="Search..." />
+      </div>
+      <div class="header-right">
+        <button class="add-post-btn" title="Add Post">
+          <i class="fas fa-plus"></i>
+        </button>
+        <button class="friend-requests-btn" title="Friend Requests">
+          <i class="fas fa-user-friends"></i>
+        </button>
+        <button class="message-btn" title="Messages">
+          <i class="fas fa-comment-dots"></i>
+        </button>
+        <button class="notifications-btn" title="Notifications">
+          <i class="fas fa-bell"></i>
+        </button>
+        <button class="profile-btn" title="Profile">
+          <i class="fas fa-user-circle"></i>
+        </button>
+        <div class="dropdown">
+          <button class="dropdown-btn" title="More">
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#"><i class="fas fa-cog"></i> Settings</a>
+            <a href="#"><i class="fas fa-question-circle"></i> Help</a>
+            <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main
+      style="
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 600px;
+        margin: auto;
+        padding-top: 40px;
+      "
+    >
+      <article class="post-card" style="margin-bottom: 32px">
+        <div class="post-header">
+          <img
+            src="https://randomuser.me/api/portraits/women/44.jpg"
+            alt="Jane"
+            class="post-avatar"
+          />
+          <div>
+            <div class="post-author">Jane Smith</div>
+            <div class="post-time">2 hours ago</div>
+          </div>
+        </div>
+        <div class="post-content" style="font-size: 1.15rem">
+          Had a great time at the beach today! 🌊☀️<br />
+          <img
+            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+            alt="Beach"
+            style="width: 100%; border-radius: 10px; margin-top: 16px"
+          />
+        </div>
+        <div class="post-actions">
+          <button><i class="fas fa-thumbs-up"></i> Like</button>
+          <button><i class="fas fa-comment"></i> Comment</button>
+          <button><i class="fas fa-share"></i> Share</button>
+        </div>
+      </article>
+      <section class="comments-section">
+        <h3 style="color: #1877f2; font-size: 1.1rem; margin-bottom: 18px">
+          Comments
+        </h3>
+        <div
+          class="add-comment"
+          style="display: flex; align-items: center; margin-bottom: 18px"
+        >
+          <img
+            src="https://randomuser.me/api/portraits/men/32.jpg"
+            alt="User"
+            class="add-post-avatar"
+            style="width: 36px; height: 36px"
+          />
+          <input
+            type="text"
+            class="add-post-input"
+            placeholder="Write a comment..."
+            style="margin-left: 10px"
+          />
+          <button class="add-post-action" style="margin-left: 10px">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+        <div class="comment-list">
+          <div
+            class="comment"
+            style="display: flex; align-items: flex-start; margin-bottom: 16px"
+          >
+            <img
+              src="https://randomuser.me/api/portraits/men/65.jpg"
+              alt="Mike"
+              class="friend-avatar"
+              style="width: 32px; height: 32px"
+            />
+            <div style="margin-left: 10px">
+              <div style="font-weight: 600; color: #1877f2">
+                Mike Lee
+                <span style="color: #888; font-weight: 400; font-size: 0.97rem"
+                  >· 1h</span
+                >
+              </div>
+              <div style="font-size: 1.02rem">
+                Looks amazing! Glad you had fun.
+              </div>
+            </div>
+          </div>
+          <div
+            class="comment"
+            style="display: flex; align-items: flex-start; margin-bottom: 16px"
+          >
+            <img
+              src="https://randomuser.me/api/portraits/women/22.jpg"
+              alt="Anna"
+              class="friend-avatar"
+              style="width: 32px; height: 32px"
+            />
+            <div style="margin-left: 10px">
+              <div style="font-weight: 600; color: #1877f2">
+                Anna Kim
+                <span style="color: #888; font-weight: 400; font-size: 0.97rem"
+                  >· 30m</span
+                >
+              </div>
+              <div style="font-size: 1.02rem">Beautiful photo! 🌊</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

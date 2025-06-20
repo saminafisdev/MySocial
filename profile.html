@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile - MySocial</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/62136cf61f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-left">
+        <div class="logo">MySocial</div>
+        <button class="home-btn" title="Home">
+          <i class="fas fa-home"></i>
+        </button>
+      </div>
+      <div class="header-center">
+        <input type="text" class="search-bar" placeholder="Search..." />
+      </div>
+      <div class="header-right">
+        <button class="add-post-btn" title="Add Post">
+          <i class="fas fa-plus"></i>
+        </button>
+        <button class="friend-requests-btn" title="Friend Requests">
+          <i class="fas fa-user-friends"></i>
+        </button>
+        <button class="message-btn" title="Messages">
+          <i class="fas fa-comment-dots"></i>
+        </button>
+        <button class="notifications-btn" title="Notifications">
+          <i class="fas fa-bell"></i>
+        </button>
+        <button class="profile-btn" title="Profile">
+          <i class="fas fa-user-circle"></i>
+        </button>
+        <div class="dropdown">
+          <button class="dropdown-btn" title="More">
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#"><i class="fas fa-cog"></i> Settings</a>
+            <a href="#"><i class="fas fa-question-circle"></i> Help</a>
+            <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="profile-cover">
+        <div class="profile-cover-bg"></div>
+        <div class="profile-info">
+          <img
+            src="https://randomuser.me/api/portraits/men/32.jpg"
+            alt="User"
+            class="profile-avatar"
+          />
+          <div class="profile-details">
+            <h2>John Doe</h2>
+            <p class="profile-bio">Web developer. Coffee lover. Dreamer. 🌍</p>
+            <div class="profile-actions">
+              <button class="profile-action-btn">
+                <i class="fas fa-user-edit"></i> Edit Profile
+              </button>
+              <button class="profile-action-btn">
+                <i class="fas fa-user-plus"></i> Add Friend
+              </button>
+              <button class="profile-action-btn">
+                <i class="fas fa-comment-dots"></i> Message
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="profile-content">
+        <div class="profile-about">
+          <h3>About</h3>
+          <ul>
+            <li><i class="fas fa-briefcase"></i> Works at Tech Company</li>
+            <li>
+              <i class="fas fa-graduation-cap"></i> Studied at University of
+              Lagos
+            </li>
+            <li><i class="fas fa-home"></i> Lives in Lagos, Nigeria</li>
+            <li><i class="fas fa-heart"></i> In a relationship</li>
+          </ul>
+        </div>
+        <div class="profile-posts">
+          <h3>Posts</h3>
+          <article class="post-card">
+            <div class="post-header">
+              <img
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="John"
+                class="post-avatar"
+              />
+              <div>
+                <div class="post-author">John Doe</div>
+                <div class="post-time">1 hour ago</div>
+              </div>
+            </div>
+            <div class="post-content">Excited to share my new project! 🚀</div>
+            <div class="post-actions">
+              <button><i class="fas fa-thumbs-up"></i> Like</button>
+              <button><i class="fas fa-comment"></i> Comment</button>
+              <button><i class="fas fa-share"></i> Share</button>
+            </div>
+          </article>
+          <article class="post-card">
+            <div class="post-header">
+              <img
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="John"
+                class="post-avatar"
+              />
+              <div>
+                <div class="post-author">John Doe</div>
+                <div class="post-time">3 days ago</div>
+              </div>
+            </div>
+            <div class="post-content">
+              Had a great weekend hiking with friends! 🥾🌲
+            </div>
+            <div class="post-actions">
+              <button><i class="fas fa-thumbs-up"></i> Like</button>
+              <button><i class="fas fa-comment"></i> Comment</button>
+              <button><i class="fas fa-share"></i> Share</button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
